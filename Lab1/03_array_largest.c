@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+    int a[5], i, largest;
+
+    printf("Enter 5 elements: ");
+    for (i = 0; i < 5; i++)
+        scanf("%d", &a[i]);
+
+    largest = a[0];
+
+    for (i = 1; i < 5; i++) {
+        if (a[i] > largest)
+            largest = a[i];
+    }
+
+    printf("Largest number = %d\n", largest);
+
+    return 0;
+}
